@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+.container-fluid {
+  padding: 1em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-section {
+  margin: 2.5em 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section {
+  margin: 1em;
+}
+.section-title {
+  padding: 8px 10px;
+  color: #f5f6fa;
+  background-color: #40739e;
+  border-radius: 3px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Footer Profiles */
+.user-pic {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin: 20px auto 20px;
+  border-left: 3px solid #ddd;
+  border-right: 3px solid #ddd;
+  border-top: 3px solid #007bff;
+  border-bottom: 3px solid #007bff;
+  transform: rotate(-30deg);
+  transition: 0.5s;
 }
-
-.App-link {
-  color: #61dafb;
+.card-box:hover .user-pic {
+  transform: rotate(0deg);
+  transform: scale(1.1);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-box {
+  padding: 15px;
+  background-color: #fdfdfd;
+  margin: 20px 0px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  box-shadow: 0px 0px 8px 0px #d4d4d4;
+  transition: 0.5s;
 }
+.card-box:hover {
+border: 1px solid #007bff;
+}
+.card-box p {
+  color: #808080;
+}
+/* End Footer Profiles */
